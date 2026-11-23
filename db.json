@@ -1,0 +1,64 @@
+{
+  "members": [
+    {
+      "id": "1",
+      "name": "Sample Member One",
+      "email": "member.one@example.com",
+      "phone": "0000000000",
+      "group": "Monthly Savings",
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "name": "Sample Member Two",
+      "email": "member.two@example.com",
+      "phone": "0000000000",
+      "group": "Weekly Savings",
+      "status": "Active"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Monthly Savings",
+      "contribution": 200,
+      "members": 1,
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "name": "Weekly Savings",
+      "contribution": 50,
+      "members": 1,
+      "status": "Active"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "1",
+      "member": "Sample Member One",
+      "group": "Monthly Savings",
+      "amount": 200,
+      "date": "2026-11-20",
+      "status": "Completed"
+    },
+    {
+      "id": "2",
+      "member": "Sample Member Two",
+      "group": "Weekly Savings",
+      "amount": 50,
+      "date": "2026-11-21",
+      "status": "Completed"
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "member": "Sample Member One",
+      "transactionId": "SUSU001",
+      "amount": 200,
+      "date": "2026-11-20",
+      "status": "Completed"
+    }
+  ]
+}

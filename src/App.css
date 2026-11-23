@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.app h1 {
+  font-size: 32px;
+  color: #166534;
+  margin-bottom: 12px;
+}
+
+.app p {
+  font-size: 16px;
+  color: #64748b;
+}
+
+
