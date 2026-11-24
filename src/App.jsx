@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
@@ -14,13 +15,13 @@ import NotFound from './pages/Notfound'
 import './App.css'
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+
   return (
     <div className="app">
-      <Navbar />
-
-      <div className="main-layout">
-        <Sidebar />
-
+      <Sidebar isOpen={sidebarOpen} onNavigate={() => setSidebarOpen(false)} />
+      <div className="app-main">
+        <Navbar onMenuClick={() => setSidebarOpen(true)} />
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Dashboard />} />

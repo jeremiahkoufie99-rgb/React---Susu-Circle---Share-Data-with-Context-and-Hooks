@@ -23,3 +23,13 @@ export const getPayments = async () => {
   if (!response.ok) throw new Error('Failed to fetch payments')
   return response.json()
 }
+
+export const createMember = async (member) => {
+  const response = await fetch(`${API_URL}/members`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(member),
+  })
+  if (!response.ok) throw new Error('Failed to create member')
+  return response.json()
+}
